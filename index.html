@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
-<head lang="pt-br">
+<head>
     <meta charset="UTF-8">
-    <title>NodeShop Loja de infómatica</title>
+    <title>NodeShop - Loja de infómatica</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
@@ -19,9 +19,9 @@
         </h1>
 
 
-        <form method="POST">
-            <input type="text" placeholder="Faça uma busca">
-            <button>
+        <form method="GET" action="http://www.google.com/search" >
+            <input type="text" placeholder="Faça uma busca" name="q">
+            <button type="submit" >
                 <i class="fas fa-search fa-lg"></i>
 
             </button>
@@ -39,7 +39,7 @@
                 <a href="#">Serviços</a>
             </li>
             <li>
-                <a href="#">Contato</a>
+                <a href="#contato">Contato</a>
             </li>
         </ul>
         <div class="social-icons">
@@ -84,6 +84,22 @@
             </ul>
         </aside>
     </main>
+    <section class="newsletter" id="contato">
+        <h3> Newsletter </h3>
+        <p>
+           Receba nossas promoções por email" 
+        </p>
+        <form method="POST">
+            <input type="text" placeholder="Seu nome">
+            <input type="email" placeholder="Seu email">
+            <button> Cadastrar </button>
+        </form>
+
+    </section>
+    <footer class="rodape">
+        <h1 class="logo-rodape"></h1>
+        <p>NodeShop - Loja de infómatica </p>
+    </footer>
 </body>
 
 </html>
